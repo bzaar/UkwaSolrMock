@@ -7,13 +7,13 @@ using System.Web.Http;
 
 namespace UkwaSolrMock.Controllers
 {
-    [Authorize]
+    [Route("ukwa/search")]
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
+            return Resources.SearchResponse;
         }
 
         // GET api/values/5

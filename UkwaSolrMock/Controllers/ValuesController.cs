@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Text;
 using System.Web.Http;
 
 namespace UkwaSolrMock.Controllers
@@ -11,9 +12,16 @@ namespace UkwaSolrMock.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public string Get()
+        public HttpResponseMessage Get()
         {
-            return Resources.SearchResponse;
+            return new HttpResponseMessage()
+            {
+                Content = new StringContent(
+                    Resources.SearchResponse,
+                    Encoding.UTF8,
+                    "text/json"
+                )
+            };
         }
 
         // GET api/values/5

@@ -61,23 +61,28 @@ namespace UkwaSolrMock {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 
-        ///&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-        ///&lt;response&gt;
-        ///
-        ///&lt;lst name=&quot;responseHeader&quot;&gt;
-        ///  &lt;bool name=&quot;zkConnected&quot;&gt;true&lt;/bool&gt;
-        ///  &lt;int name=&quot;status&quot;&gt;0&lt;/int&gt;
-        ///  &lt;int name=&quot;QTime&quot;&gt;20&lt;/int&gt;
-        ///  &lt;lst name=&quot;params&quot;&gt;
-        ///    &lt;str name=&quot;q&quot;&gt;text:Bruce Dessau&lt;/str&gt;
-        ///    &lt;str name=&quot;indent&quot;&gt;on&lt;/str&gt;
-        ///  &lt;/lst&gt;
-        ///&lt;/lst&gt;
-        ///&lt;result name=&quot;response&quot; numFound=&quot;64846&quot; start=&quot;0&quot; maxScore=&quot;7.893731&quot;&gt;
-        ///  &lt;doc&gt;
-        ///    &lt;str name=&quot;id&quot;&gt;sha1:7FTX2XOZJHYUMOHVJMG2BTBXE6YLW6MU/WM4OYCYCMRVPim2Uw5xOfA==&lt;/str&gt;
-        ///    &lt;str name=&quot;source_file&quot;&gt;BL-20130714 [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to {
+        ///&quot;responseHeader&quot;:{
+        ///&quot;zkConnected&quot;:true,
+        ///&quot;status&quot;:0,
+        ///&quot;QTime&quot;:59,
+        ///&quot;params&quot;:{
+        ///&quot;facet.range&quot;:&quot;{!ex=filter}crawl_date&quot;,
+        ///&quot;facet.range.gap&quot;:&quot;+1YEAR&quot;,
+        ///&quot;facet.field&quot;:[&quot;{!ex=filter}public_suffix&quot;,
+        ///&quot;{!ex=filter}content_type_norm&quot;,
+        ///&quot;{!ex=filter}host&quot;,
+        ///&quot;{!ex=filter}domain&quot;,
+        ///&quot;{!ex=filter}collection&quot;],
+        ///&quot;hl&quot;:&quot;true&quot;,
+        ///&quot;indent&quot;:&quot;on&quot;,
+        ///&quot;fl&quot;:&quot;id,title,crawl_date,url,wayback_date,domain,access_terms&quot;,
+        ///&quot;start&quot;:&quot;0&quot;,
+        ///&quot;sort&quot;:&quot;&quot;,
+        ///&quot;fq&quot;:[&quot;access_terms:OA&quot;,
+        ///&quot;&quot;,
+        ///&quot;{!tag=filter}content_type_norm:[&apos;&apos; TO *]&quot;,
+        ///&quot;{!tag=filt [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string SearchResponse {
             get {
